@@ -142,6 +142,22 @@ h1, h2. h3. h4. h5. h6 {
 	margin: 0 auto;
 }
 
+.quote {
+  	background-color: rgb( 83, 71, 65 );
+	height: 120px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	max-width: 100%;
+	margin: 0 auto;
+	line-height: 120px;
+	text-align: center; 
+	font-family: "Courier New";
+	color: rgb( 255, 255, 255 );
+	font-style: italic;
+	font-size: 30px;
+}
+
 .wrapper3 {
 	background-color: rgb( 241, 229, 223 );
 	height: 900px;

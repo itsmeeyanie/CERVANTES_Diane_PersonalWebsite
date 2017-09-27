@@ -1,3 +1,6 @@
+$brown = #534741;
+$dirtywhite = #f1e5df;
+
 * {
 	box-sizing: border-box;
 }
@@ -28,6 +31,7 @@ img {
 }
 
 
+
 h1, h2. h3. h4. h5. h6 {
 	font-family: "lust";
 	font-weight: 400;
@@ -47,6 +51,13 @@ div {
 	background-repeat: no-repeat;
 }
 
+.overlay {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	/*opacity: 0.6;*/
+}
+
 .cf:before, .cf:after{
 	content: "";
 	display: table;
@@ -54,13 +65,6 @@ div {
 
 .cf:after {
 	clear: both;
-}
-
-.overlay {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	/*opacity: 0.6;*/
 }
 
 .banner {
@@ -110,7 +114,7 @@ div {
 
 .wrapper {
 	background-color: rgb( 248, 244, 244 );
-	height: 700px;
+	height: 650px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -158,6 +162,7 @@ div {
 	font-size: 30px;
 }
 
+
 .wrapper3 {
 	background-color: rgb( 241, 229, 223 );
 	height: 900px;
@@ -178,7 +183,39 @@ div {
 	margin: 0 auto;
 }
 
+[class*="icon"]{
+	background-color: rgb( 83, 71, 65 );
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	box-shadow:0 0 5px #534741;
+	mix-blend-mode: darken;
+	visibility: visible;
+	display: inline-block;
+	position: static;
+	margin-top: 50px;
+}
 
+.icon1 {
+	margin-left: 80px;
+}
 
+.icon2 {
+	margin-left: 90px;
+}
 
+.icon3 {
+	margin-left: 90px;
+}
 
+.icon4 {
+	margin-left: 90px;
+}
+
+.icon5 {
+	margin-left: 90px;
+}
+
+.icon6 {
+	margin-left: 90px;
+}

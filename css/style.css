@@ -48,21 +48,6 @@ h1, h2. h3. h4. h5. h6 {
 	opacity: 0.6;
 }
 
-.nav {
-	background-color: rgb( 137, 131, 108 );
-	display: block;
-	width: 100%;
-	height: 72px;
-	line-height: 72px;
-	opacity: 0.5;
-}
-
-.nav .nav_btn {
-	float: left;
-	margin-top:  10px;
-	font-size: 30px;
-}
-
 .banner {
 	height: auto; 
 	width: 100%;

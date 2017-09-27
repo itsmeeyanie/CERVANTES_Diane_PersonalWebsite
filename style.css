@@ -59,6 +59,21 @@ div {
 	clear: both;
 }
 
+.nav {
+	background-color: rgb( 137, 131, 108 );
+	display: block;
+	width: 100%;
+	height: 72px;
+	line-height: 72px;
+	opacity: 0.5;
+}
+
+.nav .nav_btn {
+	float: left;
+	margin-top:  10px;
+	font-size: 30px;
+}
+
 .banner {
 	height: auto; 
 	width: 100%;
@@ -132,7 +147,7 @@ div {
 
 .aboutMe {
 	width: 100%;
-	font-weight: bold; 
+	font-weight: bolder; 
 	font-size: 23px;
 	color: rgb( 50, 43, 41 );
   	font-family: "Calibri";
@@ -161,6 +176,7 @@ div {
 	text-align: center;
 	font-family: Calibri; 
 	color: rgb( 50, 43, 41 ); 
+	font-weight: bold; 
 	font-size: 24px;
 	vertical-align: inherit;
 	margin-top: 435px;
@@ -171,7 +187,7 @@ div {
 
 .wrapper2 {
 	background-color: rgb( 54, 47, 45 );
-	height: 900px;
+	height: 768px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -263,10 +279,17 @@ div {
 	vertical-align: inherit;
 	position: relative;
 	font-size: 30px;
-	margin-left: 300px;
-	margin-right: 300px;
+	margin-left: 260px;
+	margin-right: 420px;
 	margin-top: 150px;
 	line-height: 150px;
+}
+
+.line-center {
+	background-color: rgb( 255, 255, 255 );
+	width: 5px;
+	height: 460px;
+	vertical-align: inherit;
 }
 
 .skills {
@@ -277,8 +300,6 @@ div {
 	position: relative;
 	font-size: 30px;
 	margin-left: 150px;
-	margin-right: 300px;
 	margin-top: 150px;
 	line-height: 150px;
 }
-

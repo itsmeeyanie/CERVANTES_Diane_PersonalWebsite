@@ -70,6 +70,30 @@ h1, h2. h3. h4. h5. h6 {
 
 }
 
+.circle:after {
+	content: "";
+	padding-bottom: 100%;
+	display: block;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 10px solid #f1e5df;
+	box-shadow:0 0 10px #000;
+	position: sticky;
+	display: block;
+	margin: auto;
+	margin-top: -6.5em;
+}
+
+.circle img {
+	alignment-baseline: center;
+	width:  100%;
+	height: auto;
+}
+
 
 
 

@@ -27,9 +27,24 @@ img {
 	height: 100%;
 }
 
+
 h1, h2. h3. h4. h5. h6 {
 	font-family: "lust";
 	font-weight: 400;
+}
+
+p {
+	text-align: center;
+}
+
+div {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin: auto;
+	background-color: rgb( 140, 40, 27 );
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .cf:before, .cf:after{

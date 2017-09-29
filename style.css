@@ -233,9 +233,7 @@ div {
 	margin: 0 auto;
 }
 
-[class*="icon"]{
-	width: 100%;
-	height: auto;
+[class*="icon"] {
 	background-color: rgb( 83, 71, 65 );
 	width: 110px;
 	height: 110px;
@@ -243,6 +241,7 @@ div {
 	box-shadow:0 0 5px #534741;
 	mix-blend-mode: darken;
 	visibility: visible;
+	vertical-align: inherit;
 	display: inline-block;
 	position: static;
 	margin-top: 495px;

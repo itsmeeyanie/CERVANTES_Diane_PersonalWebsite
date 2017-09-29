@@ -365,6 +365,49 @@ div {
 	display: inline-block;
 }
 
+.boxElementary {
+	background-color: rgb( 255, 255, 255 );
+	width: 400px;
+	height: 130px;
+	border-bottom-right-radius: 10%;
+	border-top-left-radius: 10%;
+	margin: 20px;
+	margin-left: 120px;
+	
+}
+
+.elementary {
+	color: rgb( 50, 43, 41 );
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-size: 18px; 
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+
+.cont {
+	color: rgb( 50, 43, 41 );
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-size: 18px; 
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+
+.Eyear {
+	color: rgb( 50, 43, 41 );
+	font-family: "Jonah_DEMO-Regular";
+	font-size: 15px; 
+	text-align: center;
+	margin-left: 79px;
+	margin-right: 79px;
+	display: inline-block;
+}
+
 .line-center {
 	background-color: rgb( 255, 255, 255 );
 	width: 5px;

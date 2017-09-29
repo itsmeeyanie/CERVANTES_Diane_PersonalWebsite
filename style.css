@@ -284,6 +284,46 @@ div {
 	line-height: 150px;
 }
 
+.boxCollege {
+	background-color: rgb( 255, 255, 255 );
+	width: 400px;
+	height: 130px;
+	border-bottom-right-radius: 10%;
+	border-top-left-radius: 10%;
+	margin: 20px;
+	margin-left: 120px;	
+	box-shadow:0 0 10px #534741;
+}
+
+.course {
+	color: rgb( 50, 43, 41 );
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-size: 18px; 
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+
+.university {
+	color: rgb( 50, 43, 41 );
+	font-family: "Palanquin Light";
+	font-size: 16px; 
+	line-height: 15px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+
+.Cyear {
+	color: rgb( 50, 43, 41 );
+	font-family: "Jonah_DEMO-Regular";
+	font-size: 15px; 
+	text-align: center;
+	display: inline-block;
+}
+
 .line-center {
 	background-color: rgb( 255, 255, 255 );
 	width: 5px;

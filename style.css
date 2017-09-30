@@ -271,6 +271,32 @@ div {
 	margin-left: 100px;
 }
 
+.icon1:hover {
+	mix-blend-mode: hard-light;
+}
+
+.icon2:hover {
+	mix-blend-mode: hard-light;
+}
+
+.icon3:hover {
+	mix-blend-mode: hard-light;
+}
+
+.icon4:hover {
+	mix-blend-mode: hard-light;
+}
+
+.icon5:hover {
+	mix-blend-mode: hard-light;
+}
+
+.icon6:hover {
+	mix-blend-mode: hard-light;
+}
+
+
+
 .education {
 	font-family: "Palanquin SemiBold";
 	width: 100%;
@@ -464,6 +490,22 @@ div {
 	margin-right: -445px;
 }
 
+.skill1:hover {
+	mix-blend-mode: hard-light;
+}
+
+.skill2:hover {
+	mix-blend-mode: hard-light;
+}
+
+.skill3:hover {
+	mix-blend-mode: hard-light;
+}
+
+.skill4:hover {
+	mix-blend-mode: hard-light;
+}
+
 .q2 {
   	background-color: rgb( 54, 47, 45 );
 	height: 150px;
@@ -606,3 +648,22 @@ div {
 }
 
 
+.location:hover {
+	mix-blend-mode: color-burn;
+}
+
+.email:hover {
+	mix-blend-mode: color-burn;
+}
+
+.phone:hover {
+	mix-blend-mode: color-burn;
+}
+
+.d2:hover {
+	background-color: #f1f1f1;
+}
+
+.d3:hover {
+	background-color: #f1f1f1;
+}

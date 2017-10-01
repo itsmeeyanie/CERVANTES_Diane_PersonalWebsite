@@ -506,6 +506,19 @@ div {
 	mix-blend-mode: hard-light;
 }
 
+.myWorks {
+	width: 100%;
+  	font-family: "PT Sans Narrow";
+	font-weight: bolder; 
+	font-size: 30px;
+	color: rgb( 50, 43, 41 );
+	vertical-align: inherit;
+	text-align: center;
+	display: inline-block;
+	line-height: 170px;
+	position: absolute;
+}
+
 .q2 {
   	background-color: rgb( 54, 47, 45 );
 	height: 150px;
@@ -583,7 +596,7 @@ div {
 	text-align: center;
 	display: inline-block;
 	position: absolute;
-	margin-left: -85px;
+	margin-left: -81px;
 	margin-top: 280px;
 }
 
@@ -621,6 +634,7 @@ div {
 	position: absolute;
 	margin-left: -122px;
 	margin-top: 350px;
+	display: none;
 }
 
 .mail {
@@ -633,6 +647,7 @@ div {
 	position: absolute;
 	margin-left: -140px;
 	margin-top: 350px;
+	display: none;
 }
 
 .number {
@@ -645,25 +660,33 @@ div {
 	position: absolute;
 	margin-left: -100px;
 	margin-top: 350px;
+	display: none;
 }
-
 
 .location:hover {
 	mix-blend-mode: color-burn;
+}
+
+.location:hover + .address{
+	display: inline-block;
 }
 
 .email:hover {
 	mix-blend-mode: color-burn;
 }
 
+.email:hover + .mail{
+	display: inline-block;
+}
+
 .phone:hover {
 	mix-blend-mode: color-burn;
 }
 
-.d2:hover {
-	background-color: #f1f1f1;
+.phone:hover + .number{
+	display: inline-block;
 }
 
-.d3:hover {
-	background-color: #f1f1f1;
-}
+
+
+

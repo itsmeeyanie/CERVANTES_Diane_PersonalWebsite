@@ -215,7 +215,7 @@ div {
 
 .wrapper3 {
 	background-color: rgb( 241, 229, 223 );
-	height: 900px;
+	height: 850px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -517,6 +517,111 @@ div {
 	display: inline-block;
 	line-height: 170px;
 	position: absolute;
+}
+
+.w1 {
+	background-color: rgb( 83, 71, 65 );
+	width: 400px;
+	height: 250px;
+	mix-blend-mode: hue;
+	visibility: visible;
+	vertical-align: inherit;
+	display: inline-block;
+	mix-blend-mode: hard-light;
+	margin-top: 170px;
+	margin-left: 30px;
+	position: absolute;
+}
+
+.w1:hover {
+	box-shadow:0 0 15px #534741;
+}
+
+.w2 {
+	background-color: rgb( 83, 71, 65 );
+	width: 400px;
+	height: 250px;
+	mix-blend-mode: darken;
+	visibility: visible;
+	vertical-align: inherit;
+	display: inline-block;
+	mix-blend-mode: darken;
+	margin-top: 170px;
+	margin-left: 463px;
+	position: absolute;
+}
+
+.w2:hover {
+	box-shadow:0 0 15px #534741;
+}
+
+
+.w3 {
+	background-color: rgb( 83, 71, 65 );
+	width: 400px;
+	height: 250px;
+	mix-blend-mode: darken;
+	visibility: visible;
+	vertical-align: inherit;
+	display: inline-block;
+	margin-top: 170px;
+	margin-left: 895px;
+	position: absolute;
+}
+
+.w3:hover {
+	box-shadow:0 0 15px #534741;
+}
+
+.w4 {
+	background-color: rgb( 83, 71, 65 );
+	width: 400px;
+	height: 250px;
+	mix-blend-mode: hard-light;
+	visibility: visible;
+	vertical-align: inherit;
+	display: inline-block;
+	margin-top: 490px;
+	margin-left: 30px;
+	position: absolute;
+}
+
+.w4:hover {
+	box-shadow:0 0 20px #534741;
+}
+
+.w5 {
+	background-color: rgb( 83, 71, 65 );
+	width: 400px;
+	height: 250px;
+	mix-blend-mode: darken;
+	visibility: visible;
+	vertical-align: inherit;
+	display: inline-block;
+	margin-top: 490px;
+	margin-left: 463px;
+	position: absolute;
+}
+
+.w5:hover {
+	box-shadow:0 0 15px #534741;
+}
+
+.w6 {
+	background-color: rgb( 83, 71, 65 );
+	width: 400px;
+	height: 250px;
+	mix-blend-mode: color-burn;
+	visibility: visible;
+	vertical-align: inherit;
+	display: inline-block;
+	margin-top: 490px;
+	margin-left: 895px;
+	position: absolute;
+}
+
+.w6:hover {
+	box-shadow:0 0 15px #534741;
 }
 
 .q2 {

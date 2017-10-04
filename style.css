@@ -1,8 +1,9 @@
-$brown = #534741;
-$dirtywhite = #f1e5df;
+*, *::after, *::before {
+  box-sizing: border-box;
+}
 
-* {
-	box-sizing: border-box;
+script {
+	display: none;
 }
 
 html, body {
@@ -10,11 +11,8 @@ html, body {
     -webkit-text-size-adjust: 100%;
 	height: 100%;
 	width: 100%;
-	margin: 0 auto;
-	padding: 0 auto;
 	background-repeat: no-repeat;
 	background-size: cover;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -23,22 +21,29 @@ body {
 	overflow-y: auto;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+@media only screen and (min-width: 1050px) {
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+}
+
+a {
+  color: #267481;
+  text-decoration: none;
 }
 
 img {
 	width: 100%;
 	height: 100%;
-}
-
-
-
-h1, h2. h3. h4. h5. h6 {
-	font-family: "lust";
-	font-weight: 400;
-}
-
-p {
-	text-align: center;
 }
 
 div {
@@ -50,31 +55,13 @@ div {
 	background-repeat: no-repeat;
 }
 
-.cf:before, .cf:after{
-	content: "";
-	display: table;
+@media only screen and (min-width: 1050px) {
+  body[data-hijacking="on"] {
+    overflow: hidden;
+  }
 }
 
-.cf:after {
-	clear: both;
-}
-
-.nav {
-	background-color: rgb( 137, 131, 108 );
-	display: block;
-	width: 100%;
-	height: 72px;
-	line-height: 72px;
-	opacity: 0.5;
-}
-
-.nav .nav_btn {
-	float: left;
-	margin-top:  10px;
-	font-size: 30px;
-}
-
-.banner {
+.wrapper {
 	height: auto; 
 	width: 100%;
 	left: 0px;
@@ -85,7 +72,7 @@ div {
 	margin: 0 auto;
 }
 
-.banner h1 {
+.wrapper h1 {
 	font-family: "Lucida Console";
 	color: rgb( 255, 255, 255 );
 	font-weight: bolder; 
@@ -110,19 +97,16 @@ div {
 	border: 10px solid #f8f4f4;
 	box-shadow:0 0 3px #f8f4fe;
 	position: relative;
-	margin: auto;
-	margin-top: -6.5em;
 }
 
 .circle img {
-	alignment-baseline: center;
 	width:  100%;
 	height: auto;
 }
 
-.wrapper {
+.wrapper1 {
 	background-color: rgb( 248, 244, 244 );
-	height: 670px;
+	height: 700px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -140,7 +124,6 @@ div {
 	font-size: 16px;
 	text-align: center;
 	vertical-align: inherit;
-	margin-top: 170px;
 	position: absolute;
 }
 
@@ -152,7 +135,6 @@ div {
   	font-family: "Just tell me what";
 	vertical-align: inherit;
 	text-align: center;
-	margin-top: 170px;
 	display: inline-block;
 	line-height: 100px;
 	position: absolute;
@@ -162,11 +144,11 @@ div {
 	font-family: "Walkway Condensed SemiBold";
 	width: 100%;
 	text-align: center;
-	font-size: 18px; 
-	line-height: 35px;
+	font-size: 17px; 
+	line-height: 30px;
 	color: rgb( 50, 43, 41 );
 	vertical-align: inherit;
-	margin-top: 250px;
+	margin-top: 100px;
 	display: inline-block;
 	position: absolute;
 }
@@ -177,9 +159,9 @@ div {
 	font-family: "Photographs"; 
 	color: rgb( 50, 43, 41 ); 
 	font-weight: bold; 
-	font-size: 26px;
+	font-size: 23px;
 	vertical-align: inherit;
-	margin-top: 433px;
+	margin-top: 250px;
 	display: inline-block;
 	position: absolute;
 
@@ -187,12 +169,11 @@ div {
 
 .wrapper2 {
 	background-color: rgb( 54, 47, 45 );
-	height: 700px;
+	height: 670px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
 	max-width: 100%;
-	margin: 0 auto;
 }
 
 .quote {
@@ -215,17 +196,20 @@ div {
 
 .wrapper3 {
 	background-color: rgb( 241, 229, 223 );
-	height: 850px;
+	height: 700px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
 	max-width: 100%;
 	margin: 0 auto;
+
+	position: relative;
+	transform: translateY(-50%);
 }
 
 .wrapper4 {
 	background-color: rgb( 230, 230, 230 );
-	height: 650px;
+	height: 780px;
 	width: 100%;
 	left: 0px;
 	top: 0px;
@@ -244,7 +228,7 @@ div {
 	vertical-align: inherit;
 	display: inline-block;
 	position: static;
-	margin-top: 495px;
+	margin-top: 300px;
 }
 
 .icon1 {
@@ -307,8 +291,7 @@ div {
 	font-size: 27px;
 	margin-left: 260px;
 	margin-right: 420px;
-	margin-top: 150px;
-	line-height: 150px;
+	line-height: 80px;
 }
 
 .boxCollege {
@@ -317,9 +300,9 @@ div {
 	height: 130px;
 	border-bottom-right-radius: 10%;
 	border-top-left-radius: 10%;
-	margin: 20px;
 	margin-left: 120px;	
 	box-shadow:0 0 10px #534741;
+	line-height: 150px;
 }
 
 .course {
@@ -360,6 +343,7 @@ div {
 	border-top-left-radius: 10%;
 	margin: 20px;
 	margin-left: 120px;
+	line-height: 150px;
 }
 
 .highschool {
@@ -401,7 +385,7 @@ div {
 	border-top-left-radius: 10%;
 	margin: 20px;
 	margin-left: 120px;
-	
+	line-height: 150px;
 }
 
 .elementary {
@@ -443,7 +427,7 @@ div {
 	height: 400px;
 	vertical-align: inherit;
 	position: relative;
-	margin-top: -582px;
+	margin-top: -520px;
 }
 
 .sks {
@@ -454,7 +438,7 @@ div {
 	vertical-align: inherit;
 	position: absolute;
 	font-size: 27px;
-	margin-top: -540px;
+	margin-top: -470px;
 	margin-left: 328px;
 }
 
@@ -462,8 +446,8 @@ div {
 	float: right;
 	clear: left;
 	background-color: rgb( 255, 255, 255 );
-	width: 200px;
-	height: 200px;
+	width: 190px;
+	height: 190px;
 	border-radius: 50%;
 	box-shadow:0 0 5px #534741;
 	display: inline-block; 
@@ -471,12 +455,12 @@ div {
 }
 
 .skill1 {
-	margin-top: -422px;
+	margin-top: -410px;
 	margin-right: 365px;
 }
 
 .skill2 {
-	margin-top: -422px;
+	margin-top: -410px;
 	margin-right: 120px;
 }
 
@@ -487,7 +471,7 @@ div {
 
 .skill4 {
 	margin-top: -198px;
-	margin-right: -445px;
+	margin-right: 120px;
 }
 
 .skill1:hover {
@@ -515,7 +499,7 @@ div {
 	vertical-align: inherit;
 	text-align: center;
 	display: inline-block;
-	line-height: 170px;
+	line-height: 70px;
 	position: absolute;
 }
 
@@ -528,7 +512,7 @@ div {
 	vertical-align: inherit;
 	display: inline-block;
 	mix-blend-mode: hard-light;
-	margin-top: 170px;
+	margin-top: 100px;
 	margin-left: 30px;
 	position: absolute;
 }
@@ -546,7 +530,7 @@ div {
 	vertical-align: inherit;
 	display: inline-block;
 	mix-blend-mode: darken;
-	margin-top: 170px;
+	margin-top: 100px;
 	margin-left: 463px;
 	position: absolute;
 }
@@ -564,7 +548,7 @@ div {
 	visibility: visible;
 	vertical-align: inherit;
 	display: inline-block;
-	margin-top: 170px;
+	margin-top: 100px;
 	margin-left: 895px;
 	position: absolute;
 }
@@ -581,7 +565,7 @@ div {
 	visibility: visible;
 	vertical-align: inherit;
 	display: inline-block;
-	margin-top: 490px;
+	margin-top: 380px;
 	margin-left: 30px;
 	position: absolute;
 }
@@ -598,13 +582,13 @@ div {
 	visibility: visible;
 	vertical-align: inherit;
 	display: inline-block;
-	margin-top: 490px;
+	margin-top: 380px;
 	margin-left: 463px;
 	position: absolute;
 }
 
 .w5:hover {
-	box-shadow:0 0 15px #534741;
+	box-shadow:0 0 20px #534741;
 }
 
 .w6 {
@@ -615,13 +599,13 @@ div {
 	visibility: visible;
 	vertical-align: inherit;
 	display: inline-block;
-	margin-top: 490px;
+	margin-top: 380px;
 	margin-left: 895px;
 	position: absolute;
 }
 
 .w6:hover {
-	box-shadow:0 0 15px #534741;
+	box-shadow:0 0 20px #534741;
 }
 
 .q2 {
@@ -792,6 +776,59 @@ div {
 	display: inline-block;
 }
 
+/*copied*/
 
+.cd-section {
+  height: 100vh;
+}
 
+[data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.cd-vertical-nav {
+  /* lateral navigation */
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+}
+.cd-vertical-nav a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  /* image replace */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(img/cd-icon-arrow.svg) no-repeat center center;
+}
+.cd-vertical-nav a.cd-prev {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-bottom: 10px;
+}
+.cd-vertical-nav a.inactive {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+@media only screen and (min-width: 1050px) {
+  .cd-vertical-nav {
+    display: block;
+  }
+}
